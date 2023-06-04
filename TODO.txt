@@ -1,0 +1,11 @@
+ALTA PRIORIDADE
+
+1. Para dispositivos mobile e talves iPads e Tablets, a div sobre-text deverá ter 2 linhas ao invés de uma, para que o texto fique um embaixo do outro
+
+
+MÉDIA PRIORIDADE 
+
+
+BAIXA PRIORIDADE
+
+1. Diminuir a fonte do texto do container background

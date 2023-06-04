@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpreendaTUR</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"
+                    style="background-image: url('images/slider-1.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                    <div class="swiper-text-container">
+                        <h1>Invista no Futuro do Turismo</h1>
+                        <p>Descubra o potencial do turismo em São Paulo. EmpreendaTUR atrai investimentos, gera empregos
+                            e fortalece o setor.</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"
+                    style="background-image: url('images/slider-2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                    <div class="swiper-text-container">
+                        <h1>Transformando o Turismo em São Paulo em um Negócio de Sucesso</h1>
+                        <p>Faça parte do projeto EmpreendaTUR e invista no futuro do turismo em São Paulo. Retomada,
+                            crescimento e oportunidades.</p>
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide"
+                    style="background-image: url('images/slider-3.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+                    <div class="swiper-text-container">
+                        <h1>Desbravando Novos Horizontes no Turismo de São Paulo</h1>
+                        <p>Invista estrategicamente, fortaleça o setor e contribua para o desenvolvimento econômico.
+                            Faça parte dessa jornada de sucesso!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+
+    <!-- SOBRE -->
+    <section class="section-sobre">
+        <h1>SOBRE</h1>
+
+        <div class="sobre-text">
+            <p class="push-left">O estado de São Paulo Possuí 210 municípios turísticos,
+                sendo 70 estâncias e 140 municípios de interesse
+                turísticos.<br>
+
+                O EMPREENDATUR SP pretende Desenvolver um
+                Programa inicialmente com a criação de 10 Comitês de
+                empreendedorismo e desenvolvimento econômico de
+                turismo para a inclusão, formação e capacitação de
+                agentes empreendedores de turismo no estado de São
+                Paulo, por meio de exposições presenciais.<br>
+
+                O objetivo é atrair investimentos para as regiões turísticas
+                do estado, fomentar e promover o turismo regional,
+                nacional e internacional, gerar empregos e renda às
+                populações locais, buscando o fortalecimento e a
+                retomada do turismo no estado de São Paulo.</p>
+
+            <p class="push-right">O Programa EMPREENDA TUR gerará benefícios significativos à
+                economia, projetando suas atividades de turismo nos mercados Halal,
+                nacional e internacional.<br>
+                Serão abordados nas Exposições os seguintes temas:<br>
+                ➔ Turismo Rural e do Campo;<br>
+                ➔ Turismo de Negócios;<br>
+                ➔ Turismo Gastronômico;<br>
+                ➔ Turismo Religioso;<br>
+                ➔ Turismo de Aventuras;<br>
+                ➔ Fomento em Turismo, Créditos e Financiamentos.<br>
+                ➔ Turismo Halal;<br>
+                ➔ Exportação de Produtos Turísticos;<br>
+                ➔ Exposição e Cursos para empreendedores da Região;<br>
+                ➔ Shows para a população</p>
+        </div>
+    </section>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            /*autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },*/
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
