@@ -75,3 +75,38 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 3em;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .container h1 {
+        font-size: 2.7rem;
+    }
+
+    .container p {
+        font-size: 1.3rem;
+    }
+
+    .sobre-text {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+    .container h1 {
+        font-size: 2.7rem;
+    }
+
+    .container p {
+        font-size: 1.3rem;
+    }
+
+    .sobre-text {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 0.25fr;
+        row-gap: 2em;
+    }
+
+}
