@@ -461,6 +461,30 @@ nav .fa-solid {
 }
 
 
+/* ------- COLABORADORES ------- */
+
+.colaboradores {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.colaboradores h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.colaboradores p {
+    color: #777777;
+}
+
+.colaboradores img {
+    margin: 20px;
+    height: 120px;
+}
+
+
 /* ------- CTA ------- */
 
 .cta {
@@ -487,7 +511,7 @@ nav .fa-solid {
 }
 
 
-/* ------- CTA ------- */
+/* ------- FOOTER ------- */
 
 .footer {
     width: 100%;
@@ -504,9 +528,6 @@ nav .fa-solid {
 .footer a {
     color: #1F1F1F;
 }
-
-
-/* ------- FOOTER ------- */
 
 .icons {
     margin: 10px;
