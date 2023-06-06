@@ -7,125 +7,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EmpreendaTUR</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/26aac9298c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- HEADER -->
+    <section class="header">
+        <nav>
+            <a href="index.html">
+                <h2>Empreenda<span id="tur-color">TUR<span></h2>
+            </a>
 
-
-    <!-- CONTAINER -->
-    <div class="container">
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"
-                    style="background-image: url('images/slider-1.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
-                    <div class="swiper-text-container">
-                        <h1>Invista no Futuro do Turismo</h1>
-                        <p>Descubra o potencial do turismo em São Paulo. EmpreendaTUR atrai investimentos, gera empregos
-                            e fortalece o setor.</p>
-                    </div>
-                </div>
-
-                <div class="swiper-slide"
-                    style="background-image: url('images/slider-2.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
-                    <div class="swiper-text-container">
-                        <h1>Transformando o Turismo em São Paulo em um Negócio de Sucesso</h1>
-                        <p>Faça parte do projeto EmpreendaTUR e invista no futuro do turismo em São Paulo. Retomada,
-                            crescimento e oportunidades.</p>
-                    </div>
-                </div>
-
-
-                <div class="swiper-slide"
-                    style="background-image: url('images/slider-3.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;">
-                    <div class="swiper-text-container">
-                        <h1>Desbravando Novos Horizontes no Turismo de São Paulo</h1>
-                        <p>Invista estrategicamente, fortaleça o setor e contribua para o desenvolvimento econômico.
-                            Faça parte dessa jornada de sucesso!</p>
-                    </div>
-                </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#cidades">CIDADES</a></li>
+                    <li><a href="#stands">STANDS</a></li>
+                    <li><a href="#">COLABORADORES</a></li>
+                    <li><a href="#nos-contacte">NOS CONTACTE</a></li>
+                </ul>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-
-
-    <!-- SOBRE -->
-    <section class="section-sobre">
-        <h1>SOBRE</h1>
-
-        <div class="sobre-text">
-            <p class="push-left">O estado de São Paulo Possuí 210 municípios turísticos,
-                sendo 70 estâncias e 140 municípios de interesse
-                turísticos.<br>
-
-                O EMPREENDATUR SP pretende Desenvolver um
-                Programa inicialmente com a criação de 10 Comitês de
-                empreendedorismo e desenvolvimento econômico de
-                turismo para a inclusão, formação e capacitação de
-                agentes empreendedores de turismo no estado de São
-                Paulo, por meio de exposições presenciais.<br>
-
-                O objetivo é atrair investimentos para as regiões turísticas
-                do estado, fomentar e promover o turismo regional,
-                nacional e internacional, gerar empregos e renda às
-                populações locais, buscando o fortalecimento e a
-                retomada do turismo no estado de São Paulo.</p>
-
-
-            <p class="push-right">O Programa EMPREENDA TUR gerará benefícios significativos à
-                economia, projetando suas atividades de turismo nos mercados Halal,
-                nacional e internacional.<br>
-                Serão abordados nas Exposições os seguintes temas:<br>
-                ➔ Turismo Rural e do Campo;<br>
-                ➔ Turismo de Negócios;<br>
-                ➔ Turismo Gastronômico;<br>
-                ➔ Turismo Religioso;<br>
-                ➔ Turismo de Aventuras;<br>
-                ➔ Fomento em Turismo, Créditos e Financiamentos.<br>
-                ➔ Turismo Halal;<br>
-                ➔ Exportação de Produtos Turísticos;<br>
-                ➔ Exposição e Cursos para empreendedores da Região;<br>
-                ➔ Shows para a população</p>
+        <div class="text-box">
+            <h1>Descubra destinos incríveis!</h1>
+            <p>Experiências inesquecíveis aguardam por você! Viaje com confiança e descubra destinos <br> surpreendentes
+                com o nosso time de especialistas.</p>
+            <a href="#" class="subscribe-btn">INSCREVER-SE</a>
         </div>
     </section>
 
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre">
+        <h1>Sobre Nós</h1>
+        <p>Impulsionando o turismo em São Paulo através de exposições presenciais para empreendedores. <br> Atraia
+            investimentos, promova o turismo regional e descubra oportunidades emocionantes.</p>
 
+        <div class="row">
+            <div class="sobre-col">
+                <h3>Turismo Inclusivo</h3>
+                <p>O estado de São Paulo Possuí 210 municípios turísticos,
+                    sendo 70 estâncias e 140 municípios de interesse
+                    turísticos.
+                    O EMPREENDATUR SP pretende Desenvolver um
+                    Programa inicialmente com a criação de 10 Comitês de
+                    empreendedorismo e desenvolvimento econômico de
+                    turismo para a inclusão, formação e capacitação de
+                    agentes empreendedores de turismo no estado de São
+                    Paulo, por meio de exposições presenciais.
+                    O objetivo é atrair investimentos para as regiões turísticas
+                    do estado, fomentar e promover o turismo regional,
+                    nacional e internacional, gerar empregos e renda às
+                    populações locais, buscando o fortalecimento e a
+                    retomada do turismo no estado de São Paulo.</p>
+            </div>
+
+            <div class="sobre-col">
+                <h3>Benefícios e Projeção</h3>
+                <p>O Programa EMPREENDA TUR gerará benefícios significativos à
+                    economia, projetando suas atividades de turismo nos mercados Halal,
+                    nacional e internacional.<br>
+                    Serão abordados nas Exposições os seguintes termas:<br>
+                <ul>
+                    <li>Turismo Rural e do Campo</li>
+                    <li>Turismo de Negócios</li>
+                    <li>Turismo Gastronômico</li>
+                    <li>Turismo Religioso</li>
+                    <li>Turismo de Aventuras</li>
+                    <li>Fomento em Turismo, Créditos e Financiamentos</li>
+                    <li>Turismo Halal</li>
+                    <li>Exportação de Produtos Turísticos</li>
+                    <li>Exposição e Cursos para empreendedores da Região</li>
+                    <li>Shows para a população</p>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CIDADES -->
+    <section class="cidades" id="cidades">
+        <h1>Cidades</h1>
+        <p>Descubra as vibrantes cidades onde o EmpreendaTUR esta!</p>
+
+        <div class="row">
+            <div class="cidades-col">
+                <img src="images/cidade-cerquilho.jpg" alt="Cerquilho">
+                <div class="layer">
+                    <h3>CERQUILHO</h3>
+                </div>
+            </div>
+
+            <div class="cidades-col">
+                <img src="images/cidade-jales.jpg" alt="Jales">
+                <div class="layer">
+                    <h3>JALES</h3>
+                </div>
+            </div>
+
+            <div class="cidades-col">
+                <img src="images/cidade-campinas.jpg" alt="Campinas">
+                <div class="layer">
+                    <h3>CAMPINAS</h3>
+                </div>
+            </div>
+
+            <div class="cidades-col">
+                <img src="images/cidade-anhumas.jpg" alt="Anhumas">
+                <div class="layer">
+                    <h3>ANHUMAS</h3>
+                </div>
+            </div>
+
+            <div class="cidades-col">
+                <img src="images/cidade-itapolis.jpg" alt="Itapolis">
+                <div class="layer">
+                    <h3>ITÁPOLIS</h3>
+                </div>
+            </div>
+
+            <div class="cidades-col">
+                <img src="images/cidade-analandia.jpg" alt="Analândia">
+                <div class="layer">
+                    <h3>ANALÂNDIA</h3>
+                </div>
+            </div>
+
+            <div class="cidades-col">
+                <img src="images/cidade-aracatuba.jpg" alt="Araçatuba">
+                <div class="layer">
+                    <h3>ARAÇATUBA</h3>
+                </div>
+            </div>
+
+            <div class="cidades-col">
+                <img src="images/cidade-presidente-prudente.jpg" alt="Presidente Prudente">
+                <div class="layer">
+                    <h3>PRESIDENTE PRUDENTE</h3>
+                </div>
+            </div>
+
+            <div class="cidades-col">
+                <img src="images/cidade-sao-paulo.jpg" alt="São Paulo">
+                <div class="layer">
+                    <h3>SÃO PAULO</h3>
+                </div>
+            </div>
+
+            <div class="cidades-col">
+                <img src="images/cidade-sao-jose-do-rio-preto.jpg" alt="São José do Rio Preto">
+                <div class="layer">
+                    <h3>SÃO JOSÉ DO RIO PRETO</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- STANDS -->
+    <section class="stands" id="stands">
+        <h1>Stands</h1>
+        <p>Explore nossos quatro incríveis planos de stands e garanta a presença perfeita para o seu negócio!</p>
+
+        <div class="row">
+            <div class="stands-col" id="silver">
+                <img src="images/silver.jpg" alt="Silver Stand">
+                <h3>SILVER</h3>
+                <p>R$20.000,00</p>
+                <a href="#" class="stand-button">SAIBA MAIS</a>
+            </div>
+
+            <div class="stands-col" id="gold">
+                <img src="images/gold.jpg" alt="Gold Stand">
+                <h3>GOLD</h3>
+                <p>R$30.000,00</p>
+                <a href="#" class="stand-button">SAIBA MAIS</a>
+            </div>
+
+            <div class="stands-col" id="platinum">
+                <img src="images/platinum.jpg" alt="Platinum Stand">
+                <h3>PLATINUM</h3>
+                <p>R$50.000,00</p>
+                <a href="#" class="stand-button">SAIBA MAIS</a>
+            </div>
+
+            <div class="stands-col" id="titanium">
+                <img src="images/titanium.jpg" alt="Titanium Stand">
+                <h3>TITANIUM</h3>
+                <p>R$80.000,00</p>
+                <a href="#" class="stand-button">SAIBA MAIS</a>
+
+            </div>
+
+            <div class="stands-col" id="diamond">
+                <img src="images/diamond.jpg" alt="Diamond Stand">
+                <h3>DIAMOND</h3>
+                <p>R$90.000,00</p>
+                <a href="#" class="stand-button">SAIBA MAIS</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta" id="nos-contacte">
+        <h1>Inscreva-se já e não perca esse evento!</h1>
+        <a href="#" class="subscribe-btn">CONTACTE-NOS</a>
+    </section>
+
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <h4>EmpreendaTUR</h4>
+        <p>Explorando destinos, criando memórias inesquecíveis!</p>
+    
+        <div class="icons">
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+
+
+    <!-- JavaScript -->
     <script>
-        const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            /*autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },*/
-            direction: 'horizontal',
-            loop: true,
+        var navLinks = document.getElementById("navLinks");
 
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
 
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
     </script>
 </body>
-
 </html>
