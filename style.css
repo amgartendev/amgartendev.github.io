@@ -25,7 +25,8 @@
 
 #tur-color {
     font-family: 'Caveat', cursive;
-    color: lime;
+    /*color: lime;*/
+    color: #01682E;
 }
 
 nav {
@@ -57,7 +58,7 @@ nav img {
     width: 0%;
     margin: auto;
     content: '';
-    background: #F44336;
+    background: #01682E;
     transition: 0.5s;
 }
 
@@ -103,8 +104,8 @@ nav img {
 }
 
 .subscribe-btn:hover {
-    background: #F44336;
-    border: 1px solid #F44336;
+    background: #01682E;
+    border: 1px solid #01682E;
     transition: .7s;
 }
 
@@ -129,7 +130,7 @@ nav .fa-solid {
         height: 100vh;
         width: 200px;
         text-align: left;
-        background: #F44336;
+        background: #01682E;
         z-index: 2;
         transition: 0.5s;
     }
@@ -264,7 +265,7 @@ nav .fa-solid {
 }
 
 .layer:hover {
-    background: rgba(0, 255, 255, 0.7);
+    background: rgba(1, 104, 46, 0.7);
 }
 
 .layer h3 {
