@@ -25,7 +25,6 @@
 
 #tur-color {
     font-family: 'Caveat', cursive;
-    /*color: lime;*/
     color: #01682E;
 }
 
@@ -509,6 +508,72 @@ nav .fa-solid {
     .cta h1 {
         font-size: 24px;
     }
+}
+
+
+/* ------- CONTATE-NOS ------- */
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+
+}
+
+.contate-nos {
+    width: 80%;
+    margin: auto;
+}
+
+.contato-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contato-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contato-col div .fa {
+    font-size: 28px;
+    margin: 10px;
+    margin-right: 30px;
+    color: #01682E;
+}
+
+.contato-col div h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.contato-col div p {
+    padding: 0;
+}
+
+.contato-col input, .contato-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+}
+
+.contato-col button {
+    border-color: #01682E;
+    color: #01682E;
+    transition: 0.5s;
+}
+
+.contato-col button:hover {
+    color: #F1F1F1;
 }
 
 
