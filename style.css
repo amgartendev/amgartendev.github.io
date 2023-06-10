@@ -450,13 +450,31 @@ nav .fa-solid {
 }
 
 
+@media (max-width: 1550px) {
+    .stands-col {
+        height: 45vh;
+    }
+}
+
+@media (max-width: 1050px) {
+    .stands .row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .stands .row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width: 700px) {
     .stands .row {
         grid-template-columns: 1fr;
     }
 
     .stands-col {
-        height: 60vh;
+        height: 45vh;
     }
 }
 
