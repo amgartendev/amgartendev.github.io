@@ -473,16 +473,13 @@ nav .fa-solid {
 }
 
 .modal button {
-    display: inline-block;
-    position: relative;
-    background: transparent;
-    text-decoration: none;
-    padding: 12px 34px; 
     cursor: pointer;
+    padding: 12px 34px; 
     background-color: #01682E;
     border: 1px solid #01682E;
     color: #F1F1F1;
 }
+
 
 @media (max-width: 1550px) {
     .stands-col {
@@ -505,11 +502,6 @@ nav .fa-solid {
 @media (max-width: 1050px) {
     .stands .row {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .modal {
-        position: relative;
-        width: 200px;
     }
 }
 
