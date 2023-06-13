@@ -292,94 +292,70 @@ nav .fa-solid {
     padding-top: 100px;
 }
 
-.stands h1 {
-    font-size: 36px;
-    font-weight: 600;
-}
-
-.stands p {
-    color: #777777;
-}
-
 .stands .row {
     display: grid;
-    grid-template-columns: repeat(5, 0.2fr);
-    grid-template-rows: 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1em;
 }
 
 .stands-col {
-    flex-basis: 31%;
-    margin-bottom: 5%;
-    text-align: left;
-    transition: .2s;
     background-color: #1F1F1F;
-    margin: 10px;
-    height: 40vh;
-}
-
-.stands-col img {
-    height: 50%;
-    width: 100%;
+    color: #F1F1F1;
+    transition: .3s;
 }
 
 .stands-col h3 {
     margin-top: 16px;
     margin-bottom: 15px;
-    text-align: center;
     color: #F1F1F1;
 }
 
-.stands-col p {
-    padding: 0;
-    color: #F1F1F1;
-    text-align: center;
-    margin-bottom: 40px;
+.stands-col > p {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-.stand-button {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    margin: auto;
-    padding: 8px;
-    font-weight: bold;
+.stands-col img {
+    width: 100%;
+    height: 50%;
+}
+
+.stands-col button {
+    font-size: 0.85rem;
+    font-weight: 800;
+    padding: 1em 2em;
     cursor: pointer;
-    transition: .2s;
+    background-color: #1F1F1F;
+    transition: .3s;
 }
 
 #silver:hover {
     box-shadow:  0 0 20px 0px rgba(0, 0, 0, 1);
-    transition: .2s;
 }
 
-
-#silver .stand-button {
+#silver > button {
     border: 3px solid #B4B4B4;
-    background-color: #1F1F1F;
     color: #B4B4B4;
 }
 
-#silver .stand-button:hover {
+#silver > button:hover {
     box-shadow: 0 0 15px 0px rgba(180, 180, 180, 1);
     border: 3px solid #B4B4B4;
     background-color: #B4B4B4;
     color: #1F1F1F;
 }
 
-
 #gold:hover {
     box-shadow:  0 0 20px 0px rgba(255, 215, 0, 1);
     transition: .2s;
 }
 
-#gold .stand-button {
+#gold > button {
     border: 3px solid #FFD700;
-    background-color: #1F1F1F;
     color: #FFD700;
 }
 
-#gold .stand-button:hover {
+#gold > button:hover {
     box-shadow: 0 0 15px 0px rgba(255, 215, 0, 1);
     border: 3px solid #FFD700;
     background-color: #FFD700;
@@ -391,13 +367,12 @@ nav .fa-solid {
     transition: .2s;
 }
 
-#platinum .stand-button {
+#platinum > button {
     border: 3px solid #00FF22;
-    background-color: #1F1F1F;
     color: #00FF22;
 }
 
-#platinum .stand-button:hover {
+#platinum > button:hover {
     box-shadow: 0 0 15px 0px rgba(0, 255, 34, 1);
     border: 3px solid #00FF22;
     background-color: #00FF22;
@@ -409,13 +384,12 @@ nav .fa-solid {
     transition: .2s;
 }
 
-#titanium .stand-button {
+#titanium > button {
     border: 3px solid #FF0000;
-    background-color: #1F1F1F;
     color: #FF0000;
 }
 
-#titanium .stand-button:hover {
+#titanium > button:hover {
     box-shadow: 0 0 15px 0px rgba(255, 0, 0, 1);
     border: 3px solid #FF0000;
     background-color: #FF0000;
@@ -427,13 +401,12 @@ nav .fa-solid {
     transition: .2s;
 }
 
-#diamond .stand-button {
+#diamond > button {
     border: 3px solid #03A8E9;
-    background-color: #1F1F1F;
     color: #03A8E9;
 }
 
-#diamond .stand-button:hover {
+#diamond > button:hover {
     box-shadow: 0 0 15px 0px rgb(3, 168, 233, 1);
     border: 3px solid #03A8E9;
     background-color: #03A8E9;
@@ -446,7 +419,7 @@ nav .fa-solid {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 700px;
+    width: 70vw;
     padding: 50px;
     visibility: hidden;
     opacity: 0;
@@ -473,141 +446,58 @@ nav .fa-solid {
 }
 
 .modal button {
-    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background: transparent;
+    text-decoration: none;
     padding: 12px 34px; 
+    cursor: pointer;
     background-color: #01682E;
     border: 1px solid #01682E;
     color: #F1F1F1;
 }
 
 
-@media (max-width: 1550px) {
-    .stands-col {
-        height: 45vh;
-    }
-}
-
-
-@media (max-width: 1300px) {
-    .stands-col {
-        height: 65vh;
-    }
-
-    .stands .row {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-
-@media (max-width: 1050px) {
-    .stands .row {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-
-@media (max-width: 950px) {
-    .stands-col {
-        height: 35vh;
-    }
-
+/* --- Laptops --- */
+@media (max-width: 1400px) {
     .stands .row {
         grid-template-columns: 1fr 1fr;
-    }
-}
-
-
-@media (max-width: 950px) and (orientation: landscape) {
-    .stands-col {
-        height: 100vh;
-    }
-}
-
-
-@media (max-width: 900px) and (orientation: landscape) {
-    .stands .row {
-        grid-template-columns: 1fr 1fr;
+        row-gap: 2em
     }
 
-    .stands-col {
-        height: 100vh;
-    }
-}
-
-
-@media (max-width: 850px) {
-    .stands-col {
-        height: 40vh;
-    }
-
-    .stands .row {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-
-@media (max-width: 850px) and (orientation: landscape) {
-    .stands-col {
-        height: 100vh;
-    }
-
-    .stands .row {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-
-@media (max-width: 800px) {
-    .stands .row {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-
-@media (max-width: 700px) {
-    .stands .row {
-        grid-template-columns: 1fr;
-    }
-
-    .stands-col {
-        height: 45vh;
-    }
-
-    .modal {
-        position: relative;
-        width: 200px;
-    }
-}
-
-
-@media (max-width: 700px) and (orientation: landscape) {
-    .stands .row {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .stands-col {
-        height: 100vh;
-    }
-}
-
-
-@media (max-width: 550px) {
-    .stands-col {
-        height: 55vh;
-    }
-}
-
-
-@media (max-width: 450px) {
     .stands-col {
         height: 50vh;
     }
 }
 
+/* --- Tablets --- */
+@media (max-width: 930px) {
+    .stands .row {
+        grid-template-columns: 1fr 1fr;
+    }
 
-@media (max-width: 380px) {
+    .stands-col {
+        height: 40vh;
+    }
+
+    .modal.active {
+        width: 80vw;
+    }
+}
+
+
+/* --- Mobile --- */
+@media (max-width: 550px) {
+    .stands .row {
+        grid-template-columns: 1fr;
+    }
+
     .stands-col {
         height: 60vh;
+    }
+
+    .modal.active {
+        position: relative;
     }
 }
 
