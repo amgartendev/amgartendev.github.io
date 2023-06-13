@@ -8,17 +8,11 @@
     <meta name="author" content="João Amgarten e Gabriel Carmo">
     <title>EmpreendaTUR</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@100;200;300;400;600;700&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/26aac9298c.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/26aac9298c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -188,36 +182,171 @@
                 <img src="images/stands/silver.jpg" alt="Silver Stand">
                 <h3>SILVER</h3>
                 <p>R$20.000,00</p>
-                <a href="#" class="stand-button">SAIBA MAIS</a>
+                <button class="stand-button" onclick="toggleClass('silver')">SAIBA MAIS</button>
+
+                <section class="modal" id="modal-silver">
+                    <h2>SILVER</h2>
+                    <nav>
+                        <ul>
+                            <li>Oportunidade para a marca patrocinar 2 estações de carregadores de celular adesivadas com o logo da marca "Seja lembrado como o salvador do dia para os participantes do evento."</li>
+                            <li>Exposição da logomarca em todas as peças de comunicação do evento, menção nos canais de divulgação;</li>
+                            <li>Distribuição de brindes e materiais promocionais;</li>
+                            <li>5 Convites para congressistas presenciais;</li>
+                        </ul>
+                    </nav>
+
+                    <h3>COMO CONTRAPARTIDA</h3>
+
+                    <nav>
+                        <ul>
+                            <li>Fornecimento de logo, identidade visual da marca e e-mail marketing exclusivo, para que possamos divulgar;</li>
+                            <li>Auxiliar na divulgação do evento, efetuando disparos de E-mail Marketing para base de dados da marca e efetuando postagens colaborativas nas Redes Sociais (cujo a arte será enviada pela equipe de comunicação do Empreendatur);</li>
+                            <li>Gravação de Vídeos Curtos e Reels de divulgação convidando público para o evento a ser combinado previamente;</li>
+                        </ul>
+                    </nav>
+
+                    <button onclick="toggleClass('silver')">Fechar</button>
+                </section>
             </div>
 
             <div class="stands-col" id="gold">
                 <img src="images/stands/gold.jpg" alt="Gold Stand">
                 <h3>GOLD</h3>
                 <p>R$30.000,00</p>
-                <a href="#" class="stand-button">SAIBA MAIS</a>
+                <button class="stand-button" onclick="toggleClass('gold')">SAIBA MAIS</button>
+
+                <section class="modal" id="modal-gold">
+                    <h2>GOLD</h2>
+                    <nav>
+                        <ul>
+                            <li>Área de Exposição de 6m² com estrutura básica (Forração carpete, 1 totem, 1 mesa com 4 cadeiras, 1 TV'S de Led, Pontos de Energia, iluminação)</li>
+                            <li>Exposição da logomarca em todas as peças de comunicação do evento, menção nos canais de divulgação;</li>
+                            <li>Distribuição de brindes e materiais promocionais;</li>
+                            <li>10 Convites para congressistas presenciais;</li>
+                        </ul>
+                    </nav>
+
+                    <h3>COMO CONTRAPARTIDA</h3>
+
+                    <nav>
+                        <ul>
+                            <li>Fornecimento de logo, identidade visual da marca e e-mail marketing exclusivo, para que possamos divulgar;</li>
+                            <li>Auxiliar na divulgação do evento, efetuando disparos de E-mail Marketing para base de dados da marca e efetuando postagens colaborativas nas Redes Sociais (cujo a arte será enviada pela equipe de comunicação do Empreendatur);</li>
+                            <li>Gravação de Vídeos Curtos e Reels de divulgação convidando público para o evento a ser combinado previamente;</li>
+                        </ul>
+                    </nav>
+
+                    <button onclick="toggleClass('gold')">Fechar</button>
+                </section>
             </div>
 
             <div class="stands-col" id="platinum">
                 <img src="images/stands/platinum.jpg" alt="Platinum Stand">
                 <h3>PLATINUM</h3>
                 <p>R$50.000,00</p>
-                <a href="#" class="stand-button">SAIBA MAIS</a>
+                <button class="stand-button" onclick="toggleClass('platinum')">SAIBA MAIS</button>
+
+                <section class="modal" id="modal-platinum">
+                    <h2>PLATINUM</h2>
+                    <nav>
+                        <ul>
+                            <li>Área de Exposição de 6m² com estrutura básica (Forração carpete, 1 totem, 1 mesa com 4 cadeiras, 1 TV'S de Led, Pontos de Energia, iluminação)</li>
+                            <li>Exibição de 1 Vídeo da empresa de até 30 segundos antes dos intervalos;</li>
+                            <li>Disparo de 1 e-mails marketing exclusivos para a base de dados do EmpreendaTUR;</li>
+                            <li>Exposição da logomarca em todas as peças de comunicação do evento, menção nos canais de divulgação;</li>
+                            <li>Distribuição de brindes e materiais promocionais;</li>
+                            <li>Comercialização de produtos e serviços durante a feira;</li>
+                            <li>20 Convites para congressistas presenciais;</li>
+                            <li>Acesso aos resultados da pesquisa de satisfação do evento;</li>
+                        </ul>
+                    </nav>
+
+                    <h3>COMO CONTRAPARTIDA</h3>
+
+                    <nav>
+                        <ul>
+                            <li>Fornecimento de logo, identidade visual da marca e e-mail marketing exclusivo, para que possamos divulgar;</li>
+                            <li>Auxiliar na divulgação do evento, efetuando disparos de E-mail Marketing para base de dados da marca e efetuando postagens colaborativas nas Redes Sociais (cujo a arte será enviada pela equipe de comunicação do Empreendatur);</li>
+                            <li>Gravação de Vídeos Curtos e Reels de divulgação convidando público para o evento a ser combinado previamente;</li>
+                        </ul>
+                    </nav>
+
+                    <button onclick="toggleClass('platinum')">Fechar</button>
+                </section>
             </div>
 
             <div class="stands-col" id="titanium">
                 <img src="images/stands/titanium.jpg" alt="Titanium Stand">
                 <h3>TITANIUM</h3>
                 <p>R$80.000,00</p>
-                <a href="#" class="stand-button">SAIBA MAIS</a>
+                <button class="stand-button" onclick="toggleClass('titanium')">SAIBA MAIS</button>
 
+                <section class="modal" id="modal-titanium">
+                    <h2>TITANIUM</h2>
+                    <nav>
+                        <ul>
+                            <li>Área de Exposição (interna) de 12m² com estrutura básica (Forração carpete, 1 totem, 2 mesas com 8 cadeiras, 2 TV'S de Led,Pontos de Energia, iluminação)</li>
+                            <li>Participação da solenidade da mesa de abertura, com pronunciamento de 3 minutos;</li>
+                            <li>1 Palestra temática;</li>
+                            <li>Exibição de 1 Vídeo da empresa de até 30 segundos antes dos intervalos;</li>
+                            <li>Disparo de 2 e-mails marketing exclusivos para a base de dados do EmpreendaTUR;</li>
+                            <li>Exposição da logomarca em todas as peças de comunicação do evento, menção nos canais de divulgação;</li>
+                            <li>Distribuição de brindes e materiais promocionais;</li>
+                            <li>Comercialização de produtos e serviços durante a feira;</li>
+                            <li>30 Convites para congressistas presenciais;</li>
+                            <li>Acesso aos resultados da pesquisa de satisfação do evento;</li>
+                        </ul>
+                    </nav>
+
+                    <h3>COMO CONTRAPARTIDA</h3>
+
+                    <nav>
+                        <ul>
+                            <li>Fornecimento de logo, identidade visual da marca e e-mail marketing exclusivo, para que possamos divulgar;</li>
+                            <li>Auxiliar na divulgação do evento, efetuando disparos de E-mail Marketing para base de dados da marca e efetuando postagens colaborativas nas Redes Sociais (cujo a arte será enviada pela equipe de comunicação do Empreendatur);</li>
+                            <li>Gravação de Vídeos Curtos e Reels de divulgação convidando público para o evento a ser combinado previamente;</li>
+                        </ul>
+                    </nav>
+
+                    <button onclick="toggleClass('titanium')">Fechar</button>
+                </section>
             </div>
 
             <div class="stands-col" id="diamond">
                 <img src="images/stands/diamond.jpg" alt="Diamond Stand">
                 <h3>DIAMOND</h3>
                 <p>R$90.000,00</p>
-                <a href="#" class="stand-button">SAIBA MAIS</a>
+                <button class="stand-button" onclick="toggleClass('diamond')">SAIBA MAIS</button>
+
+                <section class="modal" id="modal-diamond">
+                    <h2>DIAMOND</h2>
+                    <nav>
+                        <ul>
+                            <li>Área de Exposição (externa) de 12m² com estrutura básica (Forração carpete, 1 totem, 2 mesas com 8 cadeiras, 2 TV'S de Led, Pontos de Energia, iluminação, cobertura com tenda)</li>
+                            <li>Participação da solenidade da mesa de abertura, com pronunciamento de 3 minutos;</li>
+                            <li>1 Palestra temática;</li>
+                            <li>Exibição de 1 Vídeo da empresa de até 30 segundos antes dos intervalos;</li>
+                            <li>Disparo de 2 e-mails marketing exclusivos para a base de dados do EmpreendaTUR;</li>
+                            <li>Exposição da logomarca em todas as peças de comunicação do evento, menção nos canais de divulgação;</li>
+                            <li>Distribuição de brindes e materiais promocionais;</li>
+                            <li>Comercialização de produtos e serviços durante a feira;</li>
+                            <li>30 Convites para congressistas presenciais;</li>
+                            <li>Acesso aos resultados da pesquisa de satisfação do evento;</li>
+                        </ul>
+                    </nav>
+
+                    <h3>COMO CONTRAPARTIDA</h3>
+
+                    <nav>
+                        <ul>
+                            <li>Fornecimento de logo, identidade visual da marca e e-mail marketing exclusivo, para que possamos divulgar;</li>
+                            <li>Auxiliar na divulgação do evento, efetuando disparos de E-mail Marketing para base de dados da marca e efetuando postagens colaborativas nas Redes Sociais (cujo a arte será enviada pela equipe de comunicação do Empreendatur);</li>
+                            <li>Gravação de Vídeos Curtos e Reels de divulgação convidando público para o evento a ser combinado previamente;</li>
+                        </ul>
+                    </nav>
+
+                    <button onclick="toggleClass('diamond')">Fechar</button>
+                </section>
             </div>
         </div>
     </section>
@@ -320,19 +449,28 @@
     </section>
 
 
-
+    
     <!-- JavaScript -->
     <script>
         var navLinks = document.getElementById("navLinks");
-
+        
         function showMenu() {
             navLinks.style.right = "0";
         }
-
+        
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
     </script>
-</body>
 
+    <script>
+        function toggleClass(id) {
+            var stands = document.querySelector('.stands-col')
+            stands.classList.toggle('active')
+
+            var modal = document.querySelector('#modal' + '-' + id)
+            modal.classList.toggle('active')
+        }
+    </script>
+</body>
 </html>
