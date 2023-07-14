@@ -13,8 +13,7 @@
     position: relative;
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background4.png);
-    /* background: linear-gradient(180deg, rgba(245,245,255,1) 0%, rgba(154,178,218,1) 35%, rgba(58,52,250,1) 100%); */
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background.png);
     background-position: center;
     background-size: cover;
 }
