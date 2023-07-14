@@ -8,7 +8,7 @@
     <meta name="author" content="João Amgarten e Gabriel Carmo">
     <title>EmpreendaTUR</title>
 
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
@@ -100,9 +100,9 @@
 
         <div class="row">
             <div class="cidades-col">
-                <img src="images/cidades/cidade-cerquilho.jpg" alt="Cerquilho">
+                <img src="images/cidades/cidade-ribeirao-pires.jpg" alt="Ribeirão Pires">
                 <div class="layer">
-                    <h3>CERQUILHO</h3>
+                    <h3>RIBEIRÃO PIRES</h3>
                 </div>
             </div>
 
@@ -178,6 +178,34 @@
         <p>Explore nossos cinco incríveis planos de stands e garanta a presença perfeita para o seu negócio!</p>
 
         <div class="row">
+            <div class="stands-col" id="apoiador">
+                <img src="images/stands/apoiador.jpg" alt="Apoiador Stand">
+                <h3>APOIADOR</h3>
+                <p>R$2.000,00</p>
+                <button class="stand-button" onclick="toggleClass('apoiador')">SAIBA MAIS</button>
+
+                <section class="modal" id="modal-apoiador">
+                    <h2>APOIADOR</h2>
+                    <nav>
+                        <ul>
+                            <li>Exposição da logomarca em todas as peças de comunicação do evento como APOIADOR</li>
+                        </ul>
+                    </nav>
+
+                    <h3>COMO CONTRAPARTIDA</h3>
+
+                    <nav>
+                        <ul>
+                            <li>Fornecimento de logo, identidade visual da marca para que possamos divulgar e arte para adesivação do TOTEM;</li>
+                            <li>O apoiador deverá auxiliar na divulgação do evento, efetuando disparos de E-mail Marketing para base de dados da marca e efetuando postagens colaborativas nas Redes Sociais (cujo a arte será enviada pela equipe de comunicação do Empreendatur);</li>
+                            <li>Gravação de Vídeos Curtos e Rells de divulgação convidando público para o evento a ser combinado previamente;</li>
+                        </ul>
+                    </nav>
+
+                    <button onclick="toggleClass('apoiador')">Fechar</button>
+                </section>
+            </div>
+
             <div class="stands-col" id="silver">
                 <img src="images/stands/silver.jpg" alt="Silver Stand">
                 <h3>SILVER</h3>
